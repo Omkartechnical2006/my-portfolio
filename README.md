@@ -1,5 +1,5 @@
 # Omkar Suman - Portfolio Website
-
+website is live on: https://omportfolio-v2it.onrender.com/
 A stunning, animated portfolio website featuring modern design with glassmorphism effects, particle animations, and dark mode support.
 
 ## Features
@@ -94,7 +94,6 @@ Add project cards in the projects section of `index.html`.
 ## Contact
 
 **Email:** omkar2006suman@gmail.com  
-**Phone:** +91 7836987095  
 **LinkedIn:** [omkarsuman2006](https://www.linkedin.com/in/omkarsuman2006/)  
 **GitHub:** [Omkartechnical2006](https://github.com/Omkartechnical2006)
 
@@ -103,3 +102,4 @@ Add project cards in the projects section of `index.html`.
 **© 2025 Omkar Suman. All rights reserved.**
 
 *Bridging Pharmaceutical Sciences & Technology*
+
