@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omkar Suman - B.Pharm Student & Developer Portfolio">
+    <title>Omkar Suman | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Omkar</span>
+                <span class="logo-dot">.</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="greeting">
+                        <span class="wave">👋</span>
+                        <span>Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="name-highlight">Omkar Suman</span>
+                    </h1>
+                    <div class="typing-container">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        B.Pharm student with a passion for pharmaceutical sciences and technology.
+                        Combining healthcare knowledge with coding expertise to create innovative solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span>View Projects</span>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Omkartechnical2006" target="_blank" rel="noopener"
+                            class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/omkarsuman2006/" target="_blank" rel="noopener"
+                            class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:omkar2006suman@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="image-backdrop"></div>
+                        <div class="image-wrapper">
+                            <!-- Replace this src with your actual image -->
+                            <img src="https://i.ibb.co/7J7f317n/insra.jpg" alt="Omkar Suman" id="profile-img">
+                            <div class="image-glow"></div>
+                        </div>
+                        <div class="floating-card card-1">
+                            <i class="fas fa-code"></i>
+                            <span>Developer</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-flask"></i>
+                            <span>B.Pharm</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-microscope"></i>
+                            <span>Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-cards">
+                    <div class="about-card glass-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <p>B.Pharm Student</p>
+                        <span class="institute">Avviare Education Hub, Noida</span>
+                        <span class="affiliation">Affiliated by Glocal University</span>
+                    </div>
+                    <div class="about-card glass-card">
+                        <div class="card-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certification</h3>
+                        <p>Excel Mastery Course</p>
+                        <span class="institute">Learn More</span>
+                    </div>
+                    <div class="about-card glass-card">
+                        <div class="card-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Experience</h3>
+                        <p>Multiple Client Projects</p>
+                        <span class="institute">Coding & Development</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="text-highlight">
+                        I'm a B.Pharm student at Avviare Education Hub, Noida, affiliated with Glocal University,
+                        with a unique blend of pharmaceutical knowledge and technical expertise.
+                    </p>
+                    <p>
+                        Before joining B.Pharm, I dedicated myself to coding and programming, delivering multiple
+                        projects for clients. This diverse background allows me to approach pharmaceutical sciences
+                        with a technical mindset, exploring innovative solutions at the intersection of healthcare
+                        and technology.
+                    </p>
+                    <p>
+                        I'm proficient in various programming languages, Excel (completed Excel Mastery course),
+                        PowerPoint, and AI tools. My multilingual abilities in Hindi, Bhojpuri, Maithili, and
+                        English help me connect with diverse communities. I'm particularly interested in pharmaceutical
+                        research and applying technology to solve healthcare challenges.
+                    </p>
+                    <div class="languages">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <div class="language-tags">
+                            <span class="tag">Hindi</span>
+                            <span class="tag">English</span>
+                            <span class="tag">Bhojpuri</span>
+                            <span class="tag">Maithili</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Pharmaceutical Skills -->
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <i class="fas fa-pills"></i>
+                        <h3>Pharmaceutical Sciences</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Pharmaceutical Research</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Drug Analysis</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Laboratory Techniques</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming & Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Web Development</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Productivity Skills -->
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Productivity & Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Microsoft Excel</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PowerPoint</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AI Tools</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-image" style="background-image: url('https://i.ibb.co/35YBRTFm/Gemini-Generated-Image-iwyazbiwyazbiwya.png');background-size: contain; background-repeat: no-repeat;background-position: center;border: 1px solid #ccc;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Pharmaceutical</span>
+                            <span class="tag">Research</span>
+                        </div>
+                        <h3>Drug Analysis Project</h3>
+                        <p>Comprehensive research project analyzing pharmaceutical compounds and their efficacy.</p>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-image" style="background-image: url('https://i.ibb.co/sd78nX7p/tt.png');background-size: contain; background-repeat: no-repeat;background-position: center;border: 1px solid #ccc;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Web Dev</span>
+                            <span class="tag">Client Work</span>
+                        </div>
+                        <h3>Client Web Application</h3>
+                        <p>Full-stack web application developed for client with modern UI/UX design.</p>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-image"  style="background-image: url('https://i.ibb.co/TN78PP4/rt.png');background-size: contain; background-repeat: no-repeat;background-position: center;border: 1px solid #ccc;">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Excel</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <h3>Excel Automation Tool</h3>
+                        <p>Advanced Excel-based tool for data analysis and automation of pharmaceutical data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <a href="mailto:omkar2006suman@gmail.com">omkar2006suman@gmail.com</a>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <a href="tel:+917836987095">+91 7836987095</a>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/omkarsuman2006/" target="_blank"
+                            rel="noopener">@omkarsuman2006</a>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/Omkartechnical2006" target="_blank"
+                            rel="noopener">@Omkartechnical2006</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Omkar Suman. All rights reserved.</p>
+                <p class="footer-tagline">Bridging Pharmaceutical Sciences & Technology</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
