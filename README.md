@@ -1,5 +1,6 @@
 # Omkar Suman - Portfolio Website
 website is live on: https://omportfolio-v2it.onrender.com/ <br>
+                  https://omkartechnical2006.github.io/my-portfolio/ <br>
 A stunning, animated portfolio website featuring modern design with glassmorphism effects, particle animations, and dark mode support.
 
 ## Features
@@ -102,5 +103,6 @@ Add project cards in the projects section of `index.html`.
 **© 2025 Omkar Suman. All rights reserved.**
 
 *Bridging Pharmaceutical Sciences & Technology*
+
 
 
